@@ -1,0 +1,58 @@
+{
+  "name": "pixi-skin-template",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev node_modules/.bin/webpack-dev-server --inline --host 0.0.0.0 --progress --config build/dev-server.js",
+    "build": "cross-env NODE_ENV=prod node build/build.js --env-prod",
+    "build:dev": "cross-env NODE_ENV=dev node build/build.js --env-dev",
+    "lib": "tsc",
+    "startserver": "node server.js",
+    "typedoc": "node_modules/.bin/typedoc --readme none --mode modules --theme minimal --out docs src/",
+    "preversion": "node build/preVersion.js --publishPath uiProject --releasePath bin-release/web/game --resPath resource/assets.json --resourceRoot resource"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^7.1.1",
+    "chalk": "^4.1.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^3.0.0",
+    "cssnano": "^4.1.7",
+    "del": "^5.0.0",
+    "file-loader": "^4.0.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "gulp": "^4.0.2",
+    "gulp-replace": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "typedoc": "^0.16.11",
+    "typescript": "^3.5.2",
+    "url-loader": "^2.0.1",
+    "webpack": "4.35.2",
+    "webpack-bundle-analyzer": "3.3.2",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.1.10",
+    "webpack-merge": "4.1.4"
+  },
+  "dependencies": {
+    "gsap": "2.1.3",
+    "pixi-skin": "0.0.7",
+    "pixi-spine": "1.6.2",
+    "pixi.js": "4.8.9"
+  },
+  "main": "libs/index.js",
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

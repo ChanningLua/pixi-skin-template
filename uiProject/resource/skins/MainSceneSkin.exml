@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+  <e:Skin class="MainSceneSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+    <e:Group id="viewContent" height="1624" width="750" y="0" x="0" touchEnabled="true" name="view">
+      <e:Group id="bgContainer" width="1218" height="1624" y="0" x="-234">
+        <e:Image id="background" scaleX="1" scaleY="1" x="0" y="0" height="1625" width="1218" source="bg_jpg"/>
+      </e:Group>
+    </e:Group>
+  </e:Skin>

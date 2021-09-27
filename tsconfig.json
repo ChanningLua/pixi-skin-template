@@ -1,0 +1,36 @@
+{
+  "compilerOptions":{
+    "strict": false,
+    "module":"esnext",
+    "target":"es5",
+    "moduleResolution":"node",
+    "esModuleInterop": true,
+    "emitDecoratorMetadata":true,
+    "experimentalDecorators":true,
+    "sourceMap":true,
+    "declaration":true,
+    "declarationMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },                                 /* 一系列条目，它们将导入重新映射到相对于baseUrl的查找位置。*/
+    "downlevelIteration":true,      // 是否允许TS使用实验性功能迭代器
+    "removeComments": true,
+    "skipLibCheck":true,
+    "outDir":"libs",
+    "allowJs": true,
+    "lib":[
+      "es2017",
+      "dom",
+      "dom.iterable"
+    ],
+    "allowSyntheticDefaultImports":true
+  },
+  "include": [
+    "src",
+    "uiProject/libs/modules/eui/eui.d.ts"
+  ],
+  "exclude":[
+    "node_modules"
+  ]
+}

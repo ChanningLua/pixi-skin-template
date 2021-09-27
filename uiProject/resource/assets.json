@@ -1,0 +1,28 @@
+{
+	"groups":[{
+			"keys":"loading_progressBg_png,loading_bg_png,loading_progress_png,bg_jpg",
+			"name":"preload_loading"
+		}],
+	"resources":[
+		{
+			"name":"bg_jpg",
+			"type":"image",
+			"url":"images/bg.jpg"
+		},
+		{
+			"name":"loading_progressBg_png",
+			"type":"image",
+			"url":"images/loading/loading_progressBg.png"
+		},
+		{
+			"name":"loading_bg_png",
+			"type":"image",
+			"url":"images/loading/loading_bg.png"
+		},
+		{
+			"name":"loading_progress_png",
+			"type":"image",
+			"url":"images/loading/loading_progress.png"
+		}
+	]
+}
