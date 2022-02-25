@@ -1,0 +1,75 @@
+{
+    "groups": [
+        {
+            "keys": "loading_progressBg_png,loading_bg_png,loading_progress_png,bg_jpg,autumn_monkey_png,button_long_bg_png,npc_popup_close_png,PopUp-NPC_atlas,PopUp-NPC_json,PopUp-NPC_png,PopUp-Dots_atlas,PopUp-Dots_json,PopUp-Dots_png",
+            "name": "preload_loading"
+        }
+    ],
+    "resources": [
+        {
+            "name": "bg_jpg",
+            "type": "image",
+            "url": "assets/bd/bde008c4_380718.jpg"
+        },
+        {
+            "name": "loading_progressBg_png",
+            "type": "image",
+            "url": "assets/75/754be313_256.png"
+        },
+        {
+            "name": "loading_bg_png",
+            "type": "image",
+            "url": "assets/3f/3fc5c78_21455.png"
+        },
+        {
+            "name": "loading_progress_png",
+            "type": "image",
+            "url": "assets/52/5264e827_296.png"
+        },
+        {
+            "name": "autumn_monkey_png",
+            "type": "image",
+            "url": "assets/29/293b98d2_3231.png"
+        },
+        {
+            "name": "button_long_bg_png",
+            "type": "image",
+            "url": "assets/b6/b6ce40da_525.png"
+        },
+        {
+            "name": "npc_popup_close_png",
+            "type": "image",
+            "url": "assets/eb/ebd31275_771.png"
+        },
+        {
+            "name": "PopUp-NPC_atlas",
+            "type": "bin",
+            "url": "assets/e2/e2e5cdab_937.atlas"
+        },
+        {
+            "name": "PopUp-NPC_json",
+            "type": "json",
+            "url": "assets/d7/d7151525_6941.json"
+        },
+        {
+            "name": "PopUp-NPC_png",
+            "type": "image",
+            "url": "assets/1a/1a8f59e4_206320.png"
+        },
+        {
+            "name": "PopUp-Dots_atlas",
+            "type": "bin",
+            "url": "assets/8d/8dc70a19_1565.atlas"
+        },
+        {
+            "name": "PopUp-Dots_json",
+            "type": "json",
+            "url": "assets/4e/4e4dc163_29611.json"
+        },
+        {
+            "name": "PopUp-Dots_png",
+            "type": "image",
+            "url": "assets/90/90976500_2673.png"
+        }
+    ]
+}

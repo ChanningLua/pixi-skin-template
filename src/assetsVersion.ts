@@ -1,2 +1,2 @@
 /* eslint-disable */
-export var assets = "adbf338e.json";
+export var assets = "b60d5110.json";

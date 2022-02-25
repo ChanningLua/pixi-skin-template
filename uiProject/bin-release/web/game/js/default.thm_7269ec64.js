@@ -10,139 +10,7 @@ window.skins={};
                 window.generateEUI = {};
                 generateEUI.paths = {};
                 generateEUI.styles = undefined;
-                generateEUI.skins = {"eui.Button":"resource/eui_skins/ButtonSkin.exml","eui.CheckBox":"resource/eui_skins/CheckBoxSkin.exml","eui.HScrollBar":"resource/eui_skins/HScrollBarSkin.exml","eui.HSlider":"resource/eui_skins/HSliderSkin.exml","eui.Panel":"resource/eui_skins/PanelSkin.exml","eui.TextInput":"resource/eui_skins/TextInputSkin.exml","eui.ProgressBar":"resource/eui_skins/ProgressBarSkin.exml","eui.RadioButton":"resource/eui_skins/RadioButtonSkin.exml","eui.Scroller":"resource/eui_skins/ScrollerSkin.exml","eui.ToggleSwitch":"resource/eui_skins/ToggleSwitchSkin.exml","eui.VScrollBar":"resource/eui_skins/VScrollBarSkin.exml","eui.VSlider":"resource/eui_skins/VSliderSkin.exml","eui.ItemRenderer":"resource/eui_skins/ItemRendererSkin.exml"};generateEUI.paths['resource/skins/LoadingSkin.exml'] = window.LoadingSkin = (function (_super) {
-	__extends(LoadingSkin, _super);
-	function LoadingSkin() {
-		_super.call(this);
-		this.skinParts = ["background","progressBarBg","progressBar","progressText","bgContainer","viewContent"];
-		
-		this.elementsContent = [this.viewContent_i()];
-	}
-	var _proto = LoadingSkin.prototype;
-
-	_proto.viewContent_i = function () {
-		var t = new eui.Group();
-		this.viewContent = t;
-		t.height = 1624;
-		t.width = 750;
-		t.x = 0;
-		t.y = 0;
-		t.elementsContent = [this.bgContainer_i()];
-		return t;
-	};
-	_proto.bgContainer_i = function () {
-		var t = new eui.Group();
-		this.bgContainer = t;
-		t.height = 1624;
-		t.width = 1218;
-		t.x = -234;
-		t.y = 0;
-		t.elementsContent = [this.background_i(),this.progressBarBg_i(),this.progressBar_i(),this.progressText_i(),this._Label1_i()];
-		return t;
-	};
-	_proto.background_i = function () {
-		var t = new eui.Image();
-		this.background = t;
-		t.height = 1624;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.source = "loading_bg_png";
-		t.width = 1218;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto.progressBarBg_i = function () {
-		var t = new eui.Image();
-		this.progressBarBg = t;
-		t.height = 8;
-		t.source = "loading_progressBg_png";
-		t.verticalCenter = 100;
-		t.width = 322;
-		t.x = 448;
-		return t;
-	};
-	_proto.progressBar_i = function () {
-		var t = new eui.Image();
-		this.progressBar = t;
-		t.height = 8;
-		t.source = "loading_progress_png";
-		t.verticalCenter = 100;
-		t.width = 322;
-		t.x = 448;
-		return t;
-	};
-	_proto.progressText_i = function () {
-		var t = new eui.Label();
-		this.progressText = t;
-		t.anchorOffsetX = 0;
-		t.anchorOffsetY = 0;
-		t.horizontalCenter = 0;
-		t.size = 34;
-		t.text = "正在前往 0%";
-		t.textColor = 0xdf9438;
-		t.y = 945.09;
-		return t;
-	};
-	_proto._Label1_i = function () {
-		var t = new eui.Label();
-		t.alpha = 0.5;
-		t.anchorOffsetX = 0;
-		t.anchorOffsetY = 0;
-		t.horizontalCenter = 0;
-		t.size = 26;
-		t.text = "每天进步一点点";
-		t.textColor = 0x999999;
-		t.y = 1530.27;
-		return t;
-	};
-	return LoadingSkin;
-})(eui.Skin);generateEUI.paths['resource/skins/MainSceneSkin.exml'] = window.MainSceneSkin = (function (_super) {
-	__extends(MainSceneSkin, _super);
-	function MainSceneSkin() {
-		_super.call(this);
-		this.skinParts = ["background","bgContainer","viewContent"];
-		
-		this.elementsContent = [this.viewContent_i()];
-	}
-	var _proto = MainSceneSkin.prototype;
-
-	_proto.viewContent_i = function () {
-		var t = new eui.Group();
-		this.viewContent = t;
-		t.height = 1624;
-		t.name = "view";
-		t.touchEnabled = true;
-		t.width = 750;
-		t.x = 0;
-		t.y = 0;
-		t.elementsContent = [this.bgContainer_i()];
-		return t;
-	};
-	_proto.bgContainer_i = function () {
-		var t = new eui.Group();
-		this.bgContainer = t;
-		t.height = 1624;
-		t.width = 1218;
-		t.x = -234;
-		t.y = 0;
-		t.elementsContent = [this.background_i()];
-		return t;
-	};
-	_proto.background_i = function () {
-		var t = new eui.Image();
-		this.background = t;
-		t.height = 1625;
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.source = "bg_jpg";
-		t.width = 1218;
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	return MainSceneSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/ButtonSkin.exml'] = window.skins.ButtonSkin = (function (_super) {
+                generateEUI.skins = {"eui.Button":"resource/eui_skins/ButtonSkin.exml","eui.CheckBox":"resource/eui_skins/CheckBoxSkin.exml","eui.HScrollBar":"resource/eui_skins/HScrollBarSkin.exml","eui.HSlider":"resource/eui_skins/HSliderSkin.exml","eui.Panel":"resource/eui_skins/PanelSkin.exml","eui.TextInput":"resource/eui_skins/TextInputSkin.exml","eui.ProgressBar":"resource/eui_skins/ProgressBarSkin.exml","eui.RadioButton":"resource/eui_skins/RadioButtonSkin.exml","eui.Scroller":"resource/eui_skins/ScrollerSkin.exml","eui.ToggleSwitch":"resource/eui_skins/ToggleSwitchSkin.exml","eui.VScrollBar":"resource/eui_skins/VScrollBarSkin.exml","eui.VSlider":"resource/eui_skins/VSliderSkin.exml","eui.ItemRenderer":"resource/eui_skins/ItemRendererSkin.exml"};generateEUI.paths['resource/eui_skins/ButtonSkin.exml'] = window.skins.ButtonSkin = (function (_super) {
 	__extends(ButtonSkin, _super);
 	function ButtonSkin() {
 		_super.call(this);
@@ -764,4 +632,210 @@ window.skins={};
 		return t;
 	};
 	return VSliderSkin;
+})(eui.Skin);generateEUI.paths['resource/skins/LoadingSkin.exml'] = window.LoadingSkin = (function (_super) {
+	__extends(LoadingSkin, _super);
+	function LoadingSkin() {
+		_super.call(this);
+		this.skinParts = ["background","progressBarBg","progressBar","progressText","bgContainer","viewContent"];
+		
+		this.elementsContent = [this.viewContent_i()];
+	}
+	var _proto = LoadingSkin.prototype;
+
+	_proto.viewContent_i = function () {
+		var t = new eui.Group();
+		this.viewContent = t;
+		t.height = 1624;
+		t.width = 750;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.bgContainer_i()];
+		return t;
+	};
+	_proto.bgContainer_i = function () {
+		var t = new eui.Group();
+		this.bgContainer = t;
+		t.height = 1624;
+		t.width = 1218;
+		t.x = -234;
+		t.y = 0;
+		t.elementsContent = [this.background_i(),this.progressBarBg_i(),this.progressBar_i(),this.progressText_i(),this._Label1_i()];
+		return t;
+	};
+	_proto.background_i = function () {
+		var t = new eui.Image();
+		this.background = t;
+		t.height = 1624;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loading_bg_png";
+		t.width = 1218;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.progressBarBg_i = function () {
+		var t = new eui.Image();
+		this.progressBarBg = t;
+		t.height = 8;
+		t.source = "loading_progressBg_png";
+		t.verticalCenter = 100;
+		t.width = 322;
+		t.x = 448;
+		return t;
+	};
+	_proto.progressBar_i = function () {
+		var t = new eui.Image();
+		this.progressBar = t;
+		t.height = 8;
+		t.source = "loading_progress_png";
+		t.verticalCenter = 100;
+		t.width = 322;
+		t.x = 448;
+		return t;
+	};
+	_proto.progressText_i = function () {
+		var t = new eui.Label();
+		this.progressText = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.size = 34;
+		t.text = "正在前往 0%";
+		t.textColor = 0xdf9438;
+		t.y = 945.09;
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.alpha = 0.5;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.size = 26;
+		t.text = "每天进步一点点";
+		t.textColor = 0x999999;
+		t.y = 1530.27;
+		return t;
+	};
+	return LoadingSkin;
+})(eui.Skin);generateEUI.paths['resource/skins/MainSceneSkin.exml'] = window.MainSceneSkin = (function (_super) {
+	__extends(MainSceneSkin, _super);
+	function MainSceneSkin() {
+		_super.call(this);
+		this.skinParts = ["background","bgContainer","uiContainer","viewContent"];
+		
+		this.elementsContent = [this.viewContent_i()];
+	}
+	var _proto = MainSceneSkin.prototype;
+
+	_proto.viewContent_i = function () {
+		var t = new eui.Group();
+		this.viewContent = t;
+		t.height = 1624;
+		t.name = "view";
+		t.touchEnabled = true;
+		t.width = 750;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.bgContainer_i(),this.uiContainer_i()];
+		return t;
+	};
+	_proto.bgContainer_i = function () {
+		var t = new eui.Group();
+		this.bgContainer = t;
+		t.height = 1624;
+		t.touchEnabled = true;
+		t.width = 1218;
+		t.x = -234;
+		t.y = 0;
+		t.elementsContent = [this.background_i()];
+		return t;
+	};
+	_proto.background_i = function () {
+		var t = new eui.Image();
+		this.background = t;
+		t.height = 1625;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "bg_jpg";
+		t.touchEnabled = true;
+		t.width = 1218;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.uiContainer_i = function () {
+		var t = new eui.Group();
+		this.uiContainer = t;
+		t.height = 1624;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = true;
+		t.width = 1218;
+		t.x = -234;
+		t.y = 0;
+		return t;
+	};
+	return MainSceneSkin;
+})(eui.Skin);generateEUI.paths['resource/skins/NpcPopupSkin.exml'] = window.NpcPopupSkin = (function (_super) {
+	__extends(NpcPopupSkin, _super);
+	function NpcPopupSkin() {
+		_super.call(this);
+		this.skinParts = ["titlePic","btnPic","btnText","close"];
+		
+		this.width = 536;
+		this.elementsContent = [this.titlePic_i(),this.btnPic_i(),this.btnText_i(),this.close_i()];
+	}
+	var _proto = NpcPopupSkin.prototype;
+
+	_proto.titlePic_i = function () {
+		var t = new eui.Image();
+		this.titlePic = t;
+		t.height = 462;
+		t.source = "autumn_monkey_png";
+		t.width = 462;
+		t.x = 37;
+		t.y = 0;
+		return t;
+	};
+	_proto.btnPic_i = function () {
+		var t = new eui.Image();
+		this.btnPic = t;
+		t.height = 76;
+		t.name = "closeNpc";
+		t.source = "button_long_bg_png";
+		t.touchEnabled = true;
+		t.width = 304;
+		t.x = 116;
+		t.y = 520;
+		return t;
+	};
+	_proto.btnText_i = function () {
+		var t = new eui.Label();
+		this.btnText = t;
+		t.anchorOffsetX = 0;
+		t.bold = true;
+		t.height = 30;
+		t.name = "closeNpc";
+		t.text = "加入队伍";
+		t.touchEnabled = true;
+		t.width = 123;
+		t.x = 207;
+		t.y = 543;
+		return t;
+	};
+	_proto.close_i = function () {
+		var t = new eui.Image();
+		this.close = t;
+		t.height = 68;
+		t.name = "closeNpc";
+		t.source = "npc_popup_close_png";
+		t.touchEnabled = true;
+		t.width = 68;
+		t.x = 234;
+		t.y = 639;
+		return t;
+	};
+	return NpcPopupSkin;
 })(eui.Skin);

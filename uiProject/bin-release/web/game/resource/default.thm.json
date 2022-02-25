@@ -29,7 +29,9 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
-		"resource/skins/LoadingSkin.exml"
+		"resource/skins/LoadingSkin.exml",
+		"resource/skins/MainSceneSkin.exml",
+		"resource/skins/NpcPopupSkin.exml"
 	],
 	"path": "resource/default.thm.json"
 }

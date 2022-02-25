@@ -1,6 +1,6 @@
 {
 	"groups":[{
-			"keys":"loading_progressBg_png,loading_bg_png,loading_progress_png,bg_jpg",
+			"keys":"loading_progressBg_png,loading_bg_png,loading_progress_png,bg_jpg,autumn_monkey_png,button_long_bg_png,npc_popup_close_png,PopUp-NPC_atlas,PopUp-NPC_json,PopUp-NPC_png,PopUp-Dots_atlas,PopUp-Dots_json,PopUp-Dots_png",
 			"name":"preload_loading"
 		}],
 	"resources":[
@@ -23,6 +23,51 @@
 			"name":"loading_progress_png",
 			"type":"image",
 			"url":"images/loading/loading_progress.png"
+		},
+		{
+			"name":"autumn_monkey_png",
+			"type":"image",
+			"url":"images/mainScene/autumn_monkey.png"
+		},
+		{
+			"name":"button_long_bg_png",
+			"type":"image",
+			"url":"images/mainScene/button_long_bg.png"
+		},
+		{
+			"name":"npc_popup_close_png",
+			"type":"image",
+			"url":"images/mainScene/npc_popup_close.png"
+		},
+		{
+			"name":"PopUp-NPC_atlas",
+			"type":"bin",
+			"url":"spine/PopUp-NPC.atlas"
+		},
+		{
+			"name":"PopUp-NPC_json",
+			"type":"json",
+			"url":"spine/PopUp-NPC.json"
+		},
+		{
+			"name":"PopUp-NPC_png",
+			"type":"image",
+			"url":"spine/PopUp-NPC.png"
+		},
+		{
+			"name":"PopUp-Dots_atlas",
+			"type":"bin",
+			"url":"spine/PopUp-Dots.atlas"
+		},
+		{
+			"name":"PopUp-Dots_json",
+			"type":"json",
+			"url":"spine/PopUp-Dots.json"
+		},
+		{
+			"name":"PopUp-Dots_png",
+			"type":"image",
+			"url":"spine/PopUp-Dots.png"
 		}
 	]
 }

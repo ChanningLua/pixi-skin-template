@@ -1,0 +1,62 @@
+
+PopUp-NPC.png
+size: 1536,915
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BlueBall
+  rotate: false
+  xy: 646, 251
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+BoxClose
+  rotate: false
+  xy: 2, 2
+  size: 334, 306
+  orig: 334, 308
+  offset: 0, 0
+  index: -1
+BoxOpen
+  rotate: false
+  xy: 1031, 19
+  size: 346, 388
+  orig: 346, 388
+  offset: 0, 0
+  index: -1
+BoxShine
+  rotate: false
+  xy: 1379, 348
+  size: 48, 59
+  orig: 58, 71
+  offset: 5, 6
+  index: -1
+Light
+  rotate: true
+  xy: 338, 12
+  size: 296, 306
+  orig: 340, 340
+  offset: 27, 17
+  index: -1
+PinkStar
+  rotate: false
+  xy: 646, 278
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+PopUpBoardNPC
+  rotate: true
+  xy: 2, 310
+  size: 603, 1027
+  orig: 603, 1029
+  offset: 0, 0
+  index: -1
+UILight
+  rotate: false
+  xy: 1031, 409
+  size: 503, 504
+  orig: 513, 511
+  offset: 6, 4
+  index: -1

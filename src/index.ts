@@ -2,7 +2,8 @@
 
 import * as PIXI from 'pixi.js';
 window.PIXI = PIXI;
-// import 'pixi-spine';
+import 'pixi-spine';
+
 import { Application } from '@/module/Application';
 import { pixiApplication } from './module/PixiApplication';
 import { assets } from './assetsVersion';

@@ -45,7 +45,7 @@ export class LoadingScene// extends SceneMediator
     this.progressBarBg = this.bgContainer.getReference('progressBarBg');
     this.progressText = this.bgContainer.getReference('progressText');
 
-    // 设置遮罩
+    // 设置滚动条遮罩
     let graphics = new PIXI.Graphics();
     graphics.beginFill(0x66CCFF);
     graphics.drawRoundedRect(0, 0, this.progressBarBg.width, this.progressBarBg.height, 8);
@@ -55,51 +55,12 @@ export class LoadingScene// extends SceneMediator
     graphics.y = this.progressBarBg.y;
     this.bgContainer.addChild(graphics)
 
-    // 设置PIXI窗口适配模式为fixedHeight模式
-    pixiApplication.resizeScene();
-
-    // await this.loadSpine();
+    // TODO 设置PIXI窗口适配模式为fixedHeight模式
+    pixiApplication.resizeHeightScene();
+    
+    // TODO 设置PIXI窗口适配模式为fixedWidth模式
+    // pixiApplication.resizeWidthScene();
   }
-
-  // private loadSpine(){
-  //   return new Promise(async (resolve)=>{
-  //     PIXI.loader['_afterMiddleware'].pop();
-    
-  //     let json = resourceManager.getResourceItem('MainLoading_json').url;
-  //     let atlas =  resourceManager.getResourceItem('MainLoading_atlas').url;
-  //     let png =  resourceManager.getResourceItem('MainLoading_png').url;
-
-  //     await loadSource([json, atlas, png]);
-  //     this.showAnimation(json, atlas, png);
-  //     resolve();
-  //   })
-  // }
-
-  // private showAnimation(json, atlas, png){
-
-  //   let rawSkeletonData = PIXI.loader.resources[json]?.data;
-  //   let rawAtlasData = PIXI.loader.resources[atlas]?.data;
-
-  //   let spineAtlas = new PIXI.spine.core.TextureAtlas(rawAtlasData, function (line, callback) {
-  //       callback(PIXI.BaseTexture.from(png));
-  //   });
-
-  //   let spineAtlasLoader = new PIXI.spine.core.AtlasAttachmentLoader(spineAtlas);
-  //   let spineJsonParser = new PIXI.spine.core.SkeletonJson(spineAtlasLoader);
-
-  //   let spineData = spineJsonParser.readSkeletonData(rawSkeletonData);
-
-  //   let animation = new PIXI.spine.Spine(spineData);
-    
-  //   animation.position.set(381, 620);
-
-  //   animation.state.hasAnimation('MainLoadingLoop') && animation.state.setAnimation(0, 'MainLoadingShow', true)
-  //   animation.state.onComplete = ()=>{
-  //     animation.state.onComplete = null;
-  //     animation.state.hasAnimation('MainLoadingLoop') && animation.state.setAnimation(0, 'MainLoadingLoop', true);
-  //   }
-  //   this.bgContainer.addChild(animation);
-  // }
   
   private setView(){
     this.progressBar.x = this.progressBarBg.x - this.progressBarBg['_config'].width;

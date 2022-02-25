@@ -198,7 +198,7 @@ export class PixiApplication
     /**
      * 重置舞台宽度
      */
-    public resizeScene(){
+    public resizeHeightScene(){
         this.width = window.innerWidth;
         this.height = window.innerHeight;
         console.log('pixiResize', this.width, this.height);
